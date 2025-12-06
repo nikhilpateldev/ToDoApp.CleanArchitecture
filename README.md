@@ -126,6 +126,7 @@ POST /api/todoitems/{id}/complete
 ### 2️⃣ Domain State Changes
 ```csharp
 todoItem.Complete();
+```
 
 3️⃣ Domain Event Is Raised
 AddDomainEvent(new TodoItemCompletedDomainEvent(Id));
