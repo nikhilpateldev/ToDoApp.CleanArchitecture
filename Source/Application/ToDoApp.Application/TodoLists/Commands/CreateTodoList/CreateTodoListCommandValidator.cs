@@ -1,0 +1,24 @@
+﻿using FluentValidation;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ToDoApp.Application.TodoLists.Commands.CreateTodoList
+{
+    public sealed class CreateTodoListCommandValidator
+     : AbstractValidator<CreateTodoListCommand>
+    {
+        public CreateTodoListCommandValidator()
+        {
+            RuleFor(x => x.Name)
+                .NotEmpty()
+                .MaximumLength(100);
+
+            RuleFor(x => x.Description)
+                .MaximumLength(500)
+                .When(x => !string.IsNullOrWhiteSpace(x.Description));
+        }
+    }
+}
