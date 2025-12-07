@@ -2,13 +2,13 @@
 using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
-using ToDo.Application.Behaviors;
+using ToDoApp.Application.Behaviors;
 
-namespace ToDo.Application;
+namespace ToDoApp.Application;
 
 public static class DependencyInjection
 {
-    public static IServiceCollection AddToDoApplication(this IServiceCollection services)
+    public static IServiceCollection AddToDoAppApplication(this IServiceCollection services)
     {
         var assembly = Assembly.GetExecutingAssembly();
 

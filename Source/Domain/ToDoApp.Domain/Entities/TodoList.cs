@@ -2,7 +2,7 @@
 using System;
 using ToDoApp.Domain.Enums;
 
-namespace ToDo.Domain.Entities;
+namespace ToDoApp.Domain.Entities;
 
 public sealed class TodoList : AggregateRoot
 {

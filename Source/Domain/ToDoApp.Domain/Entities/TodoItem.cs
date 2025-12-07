@@ -1,7 +1,7 @@
 ﻿using Shared.Domain.Base;
 using ToDoApp.Domain.Enums;
 
-namespace ToDo.Domain.Entities;
+namespace ToDoApp.Domain.Entities;
 
 public sealed class TodoItem : Entity
 {

@@ -10,12 +10,21 @@
     <Folder Include="Auth\" />
     <Folder Include="Data\" />
     <Folder Include="Repositories\" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.22" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.22" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.22">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Application\ToDoApp.Application\ToDoApp.Application.csproj" />
     <ProjectReference Include="..\..\Domain\ToDoApp.Domain\ToDoApp.Domain.csproj" />
+    <ProjectReference Include="..\..\Shared\Shared.Common\Shared.Common\Shared.Common.csproj" />
+    <ProjectReference Include="..\..\Shared\Shared.Infrastructure\Shared.Infrastructure\Shared.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Shared\Shared.Persistence\Shared.Persistence\Shared.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

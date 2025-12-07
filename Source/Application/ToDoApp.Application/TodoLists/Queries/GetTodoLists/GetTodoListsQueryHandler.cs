@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ToDo.Domain.Entities;
+using ToDoApp.Domain.Entities;
 using ToDoApp.Application.TodoLists.Models;
 
 namespace ToDoApp.Application.TodoLists.Queries.GetTodoLists
